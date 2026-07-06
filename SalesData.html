@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sales Dashboard</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="ADMIN/salesData.css">
+</head>
+
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+
+    <button id="menuToggle" class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <h1>Sales</h1>
+
+    <div class="top-actions">
+
+        <button onclick="printSales()">
+            <i class="fas fa-print"></i>
+        </button>
+
+        <button onclick="exportPDF()">
+            <i class="fas fa-file-pdf"></i>
+        </button>
+
+        <button onclick="exportExcel()">
+            <i class="fas fa-file-excel"></i>
+        </button>
+
+    </div>
+
+</div>
+
+<!-- OVERLAY -->
+<div class="overlay" id="overlay"></div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-header">
+        <h2>POS Panel</h2>
+        <button id="closeSidebar">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="summary">
+
+        <div class="card">
+            <h4>Total Sales</h4>
+            <p id="totalSales">0</p>
+        </div>
+
+        <div class="card">
+            <h4>Total Revenue</h4>
+            <p id="totalRevenue">K0.00</p>
+        </div>
+
+        <div class="card">
+            <h4>Total Profit</h4>
+            <p id="totalProfit">K0.00</p>
+        </div>
+
+    </div>
+
+    <!-- NAV -->
+    <nav class="nav-links">
+
+        <a href="index.html"><i class="fas fa-home"></i> POS</a>
+        <a href="products.html"><i class="fas fa-box"></i> Products</a>
+        <a href="purchase.html"><i class="fas fa-shopping-cart"></i> Purchases</a>
+
+    </nav>
+
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+
+    <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input id="salesSearch" placeholder="Search sales...">
+    </div>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sale ID</th>
+                    <th>Date</th>
+                    <th>Product</th>
+                    <th>Qty</th>
+                       <th>Unit Cost</th>
+                         <th>Unit Price</th>
+                    <th>Ampunt</th>
+                    <th>Total Profit</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="salesTableBody"></tbody>
+        </table>
+    </div>
+
+</main>
+
+<script src="ADMIN/salesData.js"></script>
+
+</body>
+</html>
