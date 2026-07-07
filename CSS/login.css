@@ -207,6 +207,10 @@ font-size:20px;
 /*==================================================
 LOGIN SIDE
 ==================================================*/
+.login-section h4{
+    color: #f98416;
+    margin-bottom: 20px;
+}
 
 .login-card{
 
@@ -240,7 +244,7 @@ font-size:34px;
 
 margin-bottom:8px;
 
-color:var(--text);
+color:#6b6b6b;
 
 }
 
@@ -656,18 +660,19 @@ PHONES
 @media(max-width:480px){
 
 .login-section{
-
+overflow-x: hidden;
 padding:12px;
 
 align-items:flex-start;
 
 padding-top:30px;
-  width:100%;
-overflow-x: hidden;
+width: 100%;
+
 }
 
+
 .login-card{
-width:100%;
+
 padding:22px;
 
 border-radius:16px;
@@ -675,14 +680,12 @@ border-radius:16px;
 }
 
 .login-header{
-  width:100%;
 
 margin-bottom:25px;
 
 }
 
 .login-header h2{
-  width:100%;
 
 font-size:24px;
 
