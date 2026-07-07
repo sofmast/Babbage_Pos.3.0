@@ -91,9 +91,9 @@ staffNumber:"EMP001",
 
 manNumber:"0001",
 
-username:"elekiah",
+username:"pos",
 
-password:"pos",
+password:"admin",
 
 firstName:"Mr. Elekia",
 
@@ -142,11 +142,11 @@ username:"itPro",
 
 password:"4611",
 
-firstName:"Babbage",
+firstName:"Mr Charles",
 
-lastName:"POS",
+lastName:"Banda",
 
-fullName:"Babbage POS",
+fullName:"Developer",
 
 phone:"+260772250680",
 
@@ -175,6 +175,51 @@ updatedDate:now,
 lastLogin:null
 
 },
+    {
+
+id: baseId + 3,
+
+staffNumber:"EMP003",
+
+manNumber:"0003",
+
+username:"myapp",
+
+password:"admin2",
+
+firstName:"System",
+
+lastName:"POS",
+
+fullName:"Babbage POS",
+
+phone:"",
+
+email:"",
+
+nrc:"",
+
+department:"IT",
+
+role:"Developer",
+
+access:"Administrator",
+
+salary:0,
+
+status:"Active",
+
+blacklisted:false,
+
+photo:"",
+
+createdDate:now,
+
+updatedDate:now,
+
+lastLogin:null
+
+}
 
 ];
 
