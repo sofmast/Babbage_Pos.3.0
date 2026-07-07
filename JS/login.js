@@ -85,141 +85,146 @@ const defaultStaff = [
 
 {
 
-id: baseId + 1,
+    id: baseId + 1,
 
-staffNumber:"EMP001",
+    staffNumber:"EMP001",
 
-manNumber:"0001",
+    manNumber:"0001",
 
-username:"pos",
+    username:"elekiah",
 
-password:"admin",
+    password:"admin",
 
-firstName:"Mr. Elekia",
+    firstName:"Mr. Elekia",
 
-lastName:"Mloongo",
+    lastName:"Mloongo",
 
-fullName:"Mr. Elekia Mloongo",
+    fullName:"Mr. Elekia Mloongo",
 
-phone:"0975080150",
+    phone:"0975080150",
 
-email:"",
+    email:"",
 
-nrc:"",
+    nrc:"",
 
-department:"Administration",
+    department:"Administration",
 
-role:"System Administrator",
+    role:"System Administrator",
 
-access:"Administrator",
+    access:"Administrator",
 
-salary:0,
+    salary:0,
 
-status:"Active",
+    status:"Active",
 
-blacklisted:false,
+    blacklisted:false,
 
-photo:"",
+    photo:"",
 
-createdDate:now,
+    createdDate:now,
 
-updatedDate:now,
+    updatedDate:now,
 
-lastLogin:null
+    lastLogin:null
 
 },
 
 
 {
 
-id: baseId + 2,
+    id: baseId + 2,
 
-staffNumber:"EMP002",
+    staffNumber:"EMP002",
 
-manNumber:"0002",
+    manNumber:"0002",
 
-username:"itPro",
+    username:"myapp",
 
-password:"4611",
+    password:"admin2",
 
-firstName:"Mr Charles",
+    firstName:"System",
 
-lastName:"Banda",
+    lastName:"System",
 
-fullName:"Developer",
+    fullName:"Babbage POS",
 
-phone:"+260772250680",
+    phone:"+260772250680",
 
-email:"itprozambia@gmail.com",
+    email:"itprozambia@gmail.com",
 
-nrc:"",
+    nrc:"",
 
-department:"IT",
+    department:"IT",
 
-role:"Developer",
+    role:"Developer",
 
-access:"Administrator",
+    access:"Administrator",
 
-salary:0,
+    salary:0,
 
-status:"Active",
+    status:"Active",
 
-blacklisted:false,
+    blacklisted:false,
 
-photo:"",
+    photo:"",
 
-createdDate:now,
+    createdDate:now,
 
-updatedDate:now,
+    updatedDate:now,
 
-lastLogin:null
+    lastLogin:null
+
 
 },
-    {
+{
 
-id: baseId + 3,
+    id: baseId + 3,
 
-staffNumber:"EMP003",
+    staffNumber:"EMP0013",
 
-manNumber:"0003",
+    manNumber:"0003",
 
-username:"myapp",
+    username:"pos",
 
-password:"admin2",
+    password:"admin",
 
-firstName:"System",
+    firstName:"Mr Elekiah",
 
-lastName:"POS",
+    lastName:"Mloongo",
 
-fullName:"Babbage POS",
+    fullName:"Mr. Elekia Mloongo",
 
-phone:"",
+    phone:"0975080150",
 
-email:"",
+    email:"",
 
-nrc:"",
+    nrc:"",
 
-department:"IT",
+    department:"Administration",
 
-role:"Developer",
+    role:"System Administrator",
 
-access:"Administrator",
+    access:"Administrator",
 
-salary:0,
+    salary:0,
 
-status:"Active",
+    status:"Active",
 
-blacklisted:false,
+    blacklisted:false,
 
-photo:"",
+    photo:"",
 
-createdDate:now,
+    createdDate:now,
 
-updatedDate:now,
+    updatedDate:now,
 
-lastLogin:null
+    lastLogin:null
 
 }
+
+
+
+
 
 ];
 
@@ -231,15 +236,17 @@ defaultStaff
 
 showModal(
 
-"Babbage POS",
+"Welcome",
 
-"Default staff accounts created",
+"To Babbage Point Of Sale",
 
 "success"
 
 );
 
 }
+
+
 
 /*===============================================
            LOAD DEFAULT
@@ -262,6 +269,9 @@ function getStaff(){
     ) || [];
 
 }
+
+
+
 
 // ============================================
 // SAVE STAFF
