@@ -17,13 +17,13 @@ function abomination() {
     showModal(
         `Succeeded`,
         "Application Data Erased",
-        "warning"
+        "error"
     );
 
     setTimeout(() => {
         localStorage.clear();
         window.location = "welcome.html";
-    }, 5000);
+    }, 2000);
 }
 
 deleteData.addEventListener('click',abomination);
