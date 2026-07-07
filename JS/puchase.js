@@ -115,7 +115,7 @@ function savePurchase(purchase) {
 function renderProducts(
     keyword = ""
 ) {
-
+if(thisUser.access!=="Administrator")return(showModal(`Sorry ${thisUser.firstName}`,'You have no permisions toperform this task','nop'));
     const products =
         getProducts();
 
@@ -327,75 +327,78 @@ function renderPurchaseCart() {
             div.className =
                 "purchase-cart-card";
 
-           div.innerHTML = `
+            div.innerHTML = `
 
-<div class="item-details">
+            <div class="item-details">
 
-    <h4>
+            <h4>
 
-        ${item.name}
+            ${item.name}
 
-    </h4>
+            </h4>
 
-    <span>
+            <span>
 
-        Total
+            Total
 
-    </span>
+            </span>
 
-    <strong>
+            <strong>
 
-        K${itemTotal.toFixed(2)}
+            K${itemTotal.toFixed(2)}
 
-    </strong>
+            </strong>
 
-</div>
+            </div>
 
-<div class="controls">
+            <div class="controls">
 
-    <div class="control-group">
+            <div class="control-group">
 
-        <label>
+            <label>
 
             Cost
 
-        </label>
+            </label>
 
-        <input
+            <input
             type="number"
             step="0.01"
             class="cost-input"
             value="${item.costPrice}">
 
-    </div>
+            </div>
 
-    <div class="control-group">
+            <div class="control-group">
 
-        <label>
+            <label>
 
             Qty
 
-        </label>
+            </label>
 
-        <input
+            <input
             type="number"
             min="1"
             class="qty-input"
             value="${item.qty}">
 
-    </div>
+            </div>
 
-    <button
-        class="remove-btn">
+            <button
+            class="remove-btn">
 
-        <i class="fas fa-trash"></i>
+            <i class="fas fa-trash"></i>
 
-    </button>
+            </button>
 
-</div>
+            </div>
 
-`;
+            `;
 
+
+
+        
             // REMOVE
 
             div.querySelector(
