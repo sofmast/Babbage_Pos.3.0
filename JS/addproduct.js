@@ -253,10 +253,13 @@ document.getElementById(
 ).style.color="";
 
 
-/* focus first field */
+/* focus first field
 
+document.getElementById(
+"productName"
+).focus();*/
 
-}
+} 
 
 
 // ======================================
@@ -325,13 +328,8 @@ if (exists) {
     showModal('Duplicate!','This Item already exists','warning');
     return;
 }
-if (product.costPrice>= product.price||product.costPrice <=0) {
-    showModal('Check Cost','Price must always be above cost','warning');
-    return;
-}
-
-if (product.price<=0) {
-    showModal('Wrong Data','Price cannot be zero','warning');
+if (product.costPrice>= product.price) {
+    showModal('Wrong Data','Price must always be above cost','warning');
     return;
 }
 
@@ -380,6 +378,5 @@ window.location="index.html";
 
 
 calculateProfit();
-
 
 
