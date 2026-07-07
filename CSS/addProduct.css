@@ -225,7 +225,45 @@ gap:15px;
 
 }
 
+.home-btn{
+    background-color: #e2e8f0;
+    
+    color: #d67d0c;
+    border-color: transparent;
+    border-radius: 10px;
+     transition: 0.3s;
+}
+.secondary-btn{
+  background-color: #e2e8f0;
+    
+    color: #ff3d0c;
+    border-color: transparent;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.home-btn:hover{
+    background-color:#d67d0c;
+    color:#e2e8f0;
+    cursor: pointer;
+    transform:
+translateY(-3px);
 
+box-shadow:
+var(--shadow);
+
+}
+
+.secondary-btn:hover{
+    background-color:#d63b0c;
+    color:#e2e8f0;
+    cursor: pointer;
+    transform:
+translateY(-3px);
+
+box-shadow:
+var(--shadow);
+
+}
 .primary-btn{
 
 width:100%;
